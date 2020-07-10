@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #4A4A4A;
+}
+
+.contentStyle{
+    padding-left: 103px;
+    padding-right: 103px;
+    background-color: #F3F7FA;
+}
+
+.header.ant-layout-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F3F7FA;
+    height: 160px;
+}
+
+.header.ant-layout-header img{
+    width: 82px;
+    height: 89px;
+}

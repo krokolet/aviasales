@@ -1,0 +1,48 @@
+.myCheckbox{
+    width: 232px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.myCheckbox.ant-checkbox-group{
+    padding: 6px 0;
+}
+
+.myCheckbox .ant-checkbox-inner{
+    width: 20px;
+    height: 20px;
+}
+
+.myCheckbox .ant-checkbox-checked .ant-checkbox-inner{
+    background-color: #ffffff;
+    border-color: #2196F3;
+}
+
+.myCheckbox .ant-checkbox-checked .ant-checkbox-inner::after{
+    border-color: #2196F3;
+}
+
+.myCheckbox_title{
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    padding-left: 20px;
+}
+
+.myCheckbox .myCheckbox_input.ant-checkbox-wrapper {
+    width:100%;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 40px;
+    padding-left: 20px;
+    margin:0;
+}
+
+.myCheckbox_input .ant-checkbox + span{
+    padding-left: 10px;
+}
+.myCheckbox_input:hover{
+    background:#F1FCFF;
+    cursor: url(images/Cursor.png), pointer;
+}
