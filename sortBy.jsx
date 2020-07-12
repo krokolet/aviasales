@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Row } from "antd";
 import PropTypes from "prop-types";
+import cursor from "./images/Cursor.png";
 
 const Button = styled.button`
   width: 252px;
@@ -13,6 +14,10 @@ const Button = styled.button`
   background-color: ${(props) => (props.active ? "#2196F3" : "#FFFFFF")};
   color: ${(props) => (props.active ? "#FFFFFF" : "#4A4A4A")};
   margin-bottom: 20px;
+  outline: none;
+  :hover {
+    cursor: url(${cursor}), pointer;
+  }
 `;
 const LeftButton = styled(Button)`
   border-bottom-left-radius: 8px;
@@ -26,11 +31,6 @@ const RightButton = styled(Button)`
 `;
 
 export default class SortBy extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
-
   changeSortBy = (value) => (event) => {
     event.preventDefault();
     const { changeSort } = this.props;

@@ -4,11 +4,6 @@ import { Checkbox } from "antd";
 import PropTypes from "prop-types";
 
 export default class Filter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.props = props;
-  }
-
   onChange = (checkedValue) => {
     const { changeFilter } = this.props;
     changeFilter(checkedValue);
