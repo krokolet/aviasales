@@ -13,13 +13,13 @@ export default class Tickets extends React.Component {
 
   componentDidMount() {
     axios
-      .get("https://front-test.beta.aviasales.ru/search")
+      .get("https://front-test.dev.aviasales.ru/search")
       .then((response) => this.getTickets(response.data.searchId));
   }
 
   getTickets = async (searchId) => {
     const { tickets } = this.state;
-    const url = new URL("https://front-test.beta.aviasales.ru/tickets");
+    const url = new URL("https://front-test.dev.aviasales.ru//tickets");
     url.searchParams.append("searchId", `${searchId}`);
     try {
       const response = await axios.get(url);
